@@ -1,34 +1,18 @@
-
-
-
 # 🌦️ Weather Temperature Forecasting using ARIMA and LSTM
 
 ## 📌 Overview
-This project focuses on forecasting temperature using time-series modeling techniques and comparing the performance of a classical statistical model (ARIMA) with a deep learning model (LSTM).
+This project focuses on predicting temperature using time-series forecasting and comparing a statistical model (ARIMA) with a deep learning model (LSTM).
 
 ---
 
 ## 🎯 Objective
-To build an accurate temperature prediction system and evaluate whether deep learning models outperform traditional statistical approaches on time-series data.
+To evaluate whether deep learning models outperform traditional statistical methods for time-series forecasting.
 
 ---
 
-## 📊 Dataset
-- Historical weather data (temperature time-series)
-- Preprocessed for missing values, scaling, and sequence generation
-
----
-
-## ⚙️ Methodology
-
-### 🔹 ARIMA Model
-- Applied ARIMA for statistical time-series forecasting  
-- Tuned parameters (p, d, q) for optimal performance  
-
-### 🔹 LSTM Model
-- Built a deep learning model using LSTM layers  
-- Trained on sequential data to capture temporal dependencies  
-- Handled non-linear patterns in the dataset  
+## ⚙️ Models Used
+- **ARIMA** (AutoRegressive Integrated Moving Average)
+- **LSTM** (Long Short-Term Memory Neural Network)
 
 ---
 
@@ -36,15 +20,27 @@ To build an accurate temperature prediction system and evaluate whether deep lea
 
 - **LSTM RMSE:** 2.65°C  
 - **ARIMA RMSE:** 3.33°C  
-- **Improvement:** ~20% better accuracy with LSTM  
-
-➡️ LSTM outperformed ARIMA by effectively capturing complex and non-linear patterns in temperature data.
+- **Improvement:** ~20% better accuracy using LSTM  
 
 ---
 
-## 📉 Visualization
-- Plotted **actual vs predicted temperature trends**  
-- Compared performance across models visually  
+## 📊 Visualizations
+
+### 🔹 LSTM Predictions vs Actual
+![LSTM vs Actual](lstm_vs_actual.png.png)
+
+### 🔹 ARIMA Fitted Values vs Actual
+![ARIMA Fit](arima_fit.png.png)
+
+### 🔹 ARIMA Forecast vs Actual
+![ARIMA Forecast](arima_forecast.png.png)
+
+---
+
+## 🧠 Key Insights
+- LSTM captures **non-linear temporal patterns** better than ARIMA  
+- ARIMA struggles with complex fluctuations  
+- Deep learning provides **more accurate forecasting** for time-series data  
 
 ---
 
@@ -57,16 +53,9 @@ To build an accurate temperature prediction system and evaluate whether deep lea
 
 ---
 
-## 🚀 Key Learnings
-- Deep learning models like LSTM perform better on non-linear time-series data  
-- Proper preprocessing and sequence generation are crucial for LSTM performance  
-- Model evaluation using RMSE helps in comparing forecasting accuracy  
-
----
-
-## 📂 Future Improvements
-- Incorporate additional features (humidity, wind speed, etc.)  
-- Use advanced models like GRU or Transformer-based architectures  
-- Deploy the model as a web application  
+## 🚀 Future Work
+- Add more features (humidity, wind speed)  
+- Try GRU and Transformer models  
+- Deploy as a web application  
 
 ---
